@@ -32,12 +32,13 @@
     "src"
   ],
   "scripts": {
-    "pretest": "npm outdated && npm run lint",
-    "test": "BABEL_ENV=coverage karma start karma.conf.js --single-run",
+    "clean": "rimraf ./build/* coverage/*",
+    "pretest": "npm run lint",
+    "test": "npm run clean && BABEL_ENV=coverage karma start karma.conf.js --single-run",
     "test:watch": "karma start karma.conf.js",
     "lint": "eslint --ext .js examples/** src/** spec/**",
     "lint:fix": "eslint --fix --ext .js examples/** src/** spec/**",
-    "serve:examples": "webpack-dev-server --config webpack.examples.config.js --content-base ./examples/ --hot",
+    "serve:examples": "webpack-dev-server --config webpack.examples.config.js --content-base ./tutorials/ --hot",
     "build:examples": "echo \"Error: Not implemented yet\" && exit 1",
     "build:docs": "jsdoc --tutorials ./tutorials/ --package ./package.json --readme ./README.md -c .jsdoc",
     "build:js": "webpack -p --progress --config webpack.config.js"
@@ -68,6 +69,7 @@
     "karma-sourcemap-loader": "0.3.7",
     "karma-webpack": "2.0.3",
     "mocha": "3.4.2",
+    "rimraf": "2.6.1",
     "webpack": "2.6.1",
     "webpack-dev-server": "2.5.0"
   }
