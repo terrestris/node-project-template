@@ -1,4 +1,4 @@
-const baseConfig = require('./webpack.config.js');
+const baseConfig = require('./webpack.common.config.js');
 
 baseConfig.devServer = {
   inline: true,

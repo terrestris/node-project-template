@@ -1,7 +1,6 @@
 const path = require('path');
 
 module.exports = {
-  devtool: 'source-map',
   entry: {
     sol: [
       './src/index.js'
@@ -11,7 +10,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'build'),
     filename: '[name].js',
-    publicPath: '/build/', // mostly relevant for the webpack-debug server
+    // publicPath: '/build/', // mostly relevant for the webpack-debug server
     library: 'Sol',
     libraryTarget: 'umd'
   },
