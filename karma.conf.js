@@ -78,8 +78,16 @@ module.exports = function(config) {
     concurrency: Infinity,
 
     coverageReporter: {
-      type: 'html',
-      dir: 'coverage'
+      reporters: [
+        {
+          type: 'html',
+          dir: 'coverage',
+          subdir: '.'
+        },
+        {
+          type: 'text-summary'
+        }
+      ]
     }
   });
 };
