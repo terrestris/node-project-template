@@ -39,7 +39,7 @@ module.exports = function(config) {
       devtool: 'inline-source-map',
       module: {
         // Reuse the same loaders as declared in webpack.config.js.
-        loaders: require('./webpack.examples.config.js').module.loaders,
+        loaders: require('./webpack.common.config.js').module.loaders,
       },
       watch: true
     },
