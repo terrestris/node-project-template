@@ -39,9 +39,10 @@
     "lint": "eslint --ext js,html,md example-templates/ examples/ src/ spec/",
     "lint:fix": "eslint --fix --ext js,html,md example-templates/ examples/ src/ spec/",
     "start": "webpack-dev-server --config webpack.examples.config.js --content-base ./build/examples/ --hot",
-    "build:examples": "npm run clean && node tasks/build-examples.js",
+    "build:examples": "node tasks/build-examples.js",
     "build:docs": "jsdoc --package ./package.json --readme ./README.md -c .jsdoc",
-    "build:js": "webpack --config webpack.development.config.js && webpack --config webpack.production.config.js"
+    "build:js": "webpack --config webpack.development.config.js && webpack --config webpack.production.config.js",
+    "build": "npm run test && npm run build:examples && npm run build:docs && npm run build:js"
   },
   "dependencies": {
     "ol": "4.2.0"
