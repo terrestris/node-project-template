@@ -3,7 +3,7 @@ var path = require('path');
 var Metalsmith = require('metalsmith');
 var markdown = require('metalsmith-markdown');
 var layouts = require('metalsmith-layouts');
-
+var collections = require('metalsmith-collections');
 
 var srcDir = path.join(__dirname, '..', 'examples');
 var destDir = path.join(__dirname, '..', 'build', 'examples');
@@ -22,15 +22,13 @@ function augmentExamples(files, metalsmith, done) {
 
       // add js tag and source
       var jsFilename = id + '.js';
-      if (!(jsFilename in files)) {
-        throw new Error('No .js file found for ' + filename);
+      if (jsFilename in files) {
+        var jsSource = files[jsFilename].contents.toString();
+        file.js = {
+          filename: jsFilename,
+          source: jsSource
+        };
       }
-      var jsSource = files[jsFilename].contents.toString();
-
-      file.js = {
-        filename: jsFilename,
-        source: jsSource
-      };
 
       // add css tag and source
       var cssFilename = id + '.css';
@@ -52,6 +50,12 @@ new Metalsmith('.')
   .concurrency(25)
   .use(augmentExamples)
   .use(markdown())
+  .use(collections({
+    'Tutorials': {
+      // pattern: ['*.md', '!index.md'],
+      sortBy: 'name'
+    }
+  }))
   .use(layouts({
     engine: 'handlebars',
     directory: tplDir
