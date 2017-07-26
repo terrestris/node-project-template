@@ -39,7 +39,7 @@
     "lint": "eslint --ext js,html,md example-templates/ examples/ src/ spec/",
     "start": "webpack-dev-server --config webpack.examples.config.js --content-base ./build/ --hot",
     "build:examples": "node tasks/build-examples.js",
-    "build:docs": "jsdoc --debug --package ./package.json --readme ./README.md -c .jsdoc",
+    "build:docs": "jsdoc --package ./package.json --readme ./README.md -c .jsdoc",
     "build:js": "webpack --config webpack.development.config.js && webpack -p --config webpack.production.config.js",
     "build": "npm run test && npm run build:examples && npm run build:docs && npm run build:js"
   },
@@ -76,7 +76,7 @@
     "minami": "1.2.3",
     "mocha": "3.4.2",
     "rimraf": "2.6.1",
-    "webpack": "2.6.1",
+    "webpack": "3.4.1",
     "webpack-dev-server": "2.6.1"
   }
 }
