@@ -1,5 +1,7 @@
 # Node project template
 
+[![Build Status](https://travis-ci.org/terrestris/node-project-template.svg?branch=master)](https://travis-ci.org/terrestris/node-project-template)
+
 A simple node project template. This can be used as a starting point for
 libraries or projects depending on OpenLayers where the following is already
 preconfigured:
