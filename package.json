@@ -26,7 +26,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://gitlab.intranet.terrestris.de/dkoch/node-project-template"
+    "url": "https://github.com/terrestris/node-project-template.git"
   },
   "files": [
     "src"
