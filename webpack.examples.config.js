@@ -1,9 +1,10 @@
-const baseConfig = require('./webpack.common.config.js');
+const commonConfig = require('./webpack.common.config.js');
 
-baseConfig.devServer = {
+commonConfig.devServer = {
   inline: true,
   host: '0.0.0.0',
-  port: 8080
-},
+  port: 4809
+};
+commonConfig.devtool = 'inline-source-map';
 
-module.exports = baseConfig;
+module.exports = commonConfig;
