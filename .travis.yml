@@ -3,6 +3,8 @@ node_js:
   - "node"
 script:
   - npm test -- --browsers PhantomJS
+after_success:
+  - npm run-script coveralls
 cache:
   directories:
     - "node_modules"

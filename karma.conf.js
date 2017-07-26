@@ -85,6 +85,11 @@ module.exports = function(config) {
           subdir: '.'
         },
         {
+          type: 'lcov',
+          dir: 'coverage',
+          subdir: '.'
+        },
+        {
           type: 'text-summary'
         }
       ]
