@@ -1,5 +1,7 @@
 # Node project template
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/terrestris/node-project-template.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/terrestris/node-project-template.svg?branch=master)](https://travis-ci.org/terrestris/node-project-template) [![Coverage Status](https://coveralls.io/repos/github/terrestris/node-project-template/badge.svg?branch=master)](https://coveralls.io/github/terrestris/node-project-template?branch=master)
 
 A simple node project template. This can be used as a starting point for
