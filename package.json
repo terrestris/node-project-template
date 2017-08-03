@@ -76,7 +76,7 @@
     "metalsmith-layouts": "1.8.1",
     "metalsmith-markdown": "0.2.1",
     "minami": "1.2.3",
-    "mocha": "3.4.2",
+    "mocha": "3.5.0",
     "rimraf": "2.6.1",
     "webpack": "3.4.1",
     "webpack-dev-server": "2.6.1"
