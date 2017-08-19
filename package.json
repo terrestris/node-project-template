@@ -48,7 +48,7 @@
     "ol": "4.3.0"
   },
   "devDependencies": {
-    "babel-core": "6.25.0",
+    "babel-core": "6.26.0",
     "babel-eslint": "7.2.3",
     "babel-loader": "7.1.1",
     "babel-plugin-istanbul": "4.1.4",
