@@ -79,6 +79,6 @@
     "mocha": "4.1.0",
     "rimraf": "2.6.2",
     "webpack": "3.10.0",
-    "webpack-dev-server": "2.11.0"
+    "webpack-dev-server": "2.11.1"
   }
 }
