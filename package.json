@@ -73,7 +73,7 @@
     "karma-webpack": "2.0.9",
     "metalsmith": "2.3.0",
     "metalsmith-collections": "0.9.0",
-    "metalsmith-layouts": "1.8.1",
+    "metalsmith-layouts": "2.1.0",
     "metalsmith-markdown": "0.2.1",
     "minami": "1.2.3",
     "mocha": "5.0.0",
