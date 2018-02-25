@@ -78,7 +78,7 @@
     "minami": "1.2.3",
     "mocha": "5.0.1",
     "rimraf": "2.6.2",
-    "webpack": "3.11.0",
+    "webpack": "4.0.0",
     "webpack-dev-server": "2.11.1"
   }
 }
