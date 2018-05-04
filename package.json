@@ -45,26 +45,26 @@
     "build": "npm run test && npm run build:examples && npm run build:docs && npm run build:js"
   },
   "dependencies": {
-    "ol": "4.6.4"
+    "ol": "4.6.5"
   },
   "devDependencies": {
     "babel-core": "6.26.0",
-    "babel-eslint": "8.2.2",
+    "babel-eslint": "8.2.3",
     "babel-loader": "7.1.4",
-    "babel-plugin-istanbul": "4.1.5",
+    "babel-plugin-istanbul": "4.1.6",
     "babel-preset-es2015": "6.24.1",
     "coveralls": "3.0.0",
     "eslint": "4.19.1",
-    "eslint-plugin-html": "4.0.2",
+    "eslint-plugin-html": "4.0.3",
     "eslint-plugin-markdown": "1.0.0-beta.7",
     "expect.js": "0.3.1",
     "ink-docstrap": "1.3.2",
     "jsdoc": "3.5.5",
     "jsdoc-babel": "0.4.0",
-    "karma": "2.0.0",
+    "karma": "2.0.2",
     "karma-chrome-launcher": "2.2.0",
     "karma-cli": "1.0.1",
-    "karma-coverage": "1.1.1",
+    "karma-coverage": "1.1.2",
     "karma-firefox-launcher": "1.1.0",
     "karma-mocha": "1.3.0",
     "karma-mocha-reporter": "2.2.5",
@@ -76,7 +76,7 @@
     "metalsmith-layouts": "2.1.0",
     "metalsmith-markdown": "0.2.1",
     "minami": "1.2.3",
-    "mocha": "5.0.4",
+    "mocha": "5.0.5",
     "rimraf": "2.6.2",
     "webpack": "3.11.0",
     "webpack-dev-server": "3.1.1"
